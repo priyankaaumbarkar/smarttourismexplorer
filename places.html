@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h1>🌍 Smart Tourism Explorer</h1>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/places.html">Places</a>
+        <a href="/hotel.html">Hotels</a>
+        <a href="/restaurant.html">Restaurants</a>
+    </nav>
+</header>
+
+<!-- LIST VIEW -->
+<section id="list-view">
+
+    <section class="hero">
+        <h2>Top Tourist Places 📍</h2>
+        <p>Click any place to explore details</p>
+    </section>
+
+    <section class="features">
+
+        <div class="card" onclick="showDetails('paris')">
+            <img src="images/paris.jpg">
+            <h3>Paris</h3>
+            <p>Eiffel Tower, romantic city</p>
+        </div>
+
+        <div class="card" onclick="showDetails('dubai')">
+            <img src="images/dubai.jpg">
+            <h3>Dubai</h3>
+            <p>Luxury shopping</p>
+        </div>
+
+        <div class="card" onclick="showDetails('goa')">
+            <img src="images/goa.jpg">
+            <h3>Goa</h3>
+            <p>Beaches & nightlife</p>
+        </div>
+
+        <div class="card" onclick="showDetails('manali')">
+            <img src="images/manali.jpg">
+            <h3>Manali</h3>
+            <p>Snow mountains</p>
+        </div>
+
+        <div class="card" onclick="showDetails('london')">
+            <img src="images/london.jpg">
+            <h3>London</h3>
+            <p>Historic city</p>
+        </div>
+
+        <div class="card" onclick="showDetails('newyork')">
+            <img src="images/newyork.jpg">
+            <h3>New York</h3>
+            <p>City that never sleeps</p>
+        </div>
+
+    </section>
+
+</section>
+
+<!-- DETAILS VIEW -->
+<section id="details-view" style="display:none;">
+
+    <section class="hero">
+        <h2 id="place-name"></h2>
+        <p id="place-desc"></p>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <img id="place-img">
+            <p id="place-history"></p>
+            <p id="place-extra"></p>
+            <button class="book-btn" onclick="goBack()">⬅ Back</button>
+        </div>
+    </section>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Smart Tourism Explorer</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
